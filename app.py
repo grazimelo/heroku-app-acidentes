@@ -177,7 +177,7 @@ def main():
     tipo_de_acidente= df.groupby('tipo_acidente')[['mortos']].count().sort_values(by='mortos',ascending= False).head(20)
     tipo_de_acidente.reset_index(inplace=True)
     plt.figure(figsize=(30,10))
-    sns.pointplot(x='tipo_acidente', y='  ',data=tipo_de_acidente)
+    sns.pointplot(x='tipo_acidente', y='mortos',data=tipo_de_acidente)
     plt.xticks(rotation=50)
     plt.title('Relação entre tipo de acidentes e vítimas.')
     st.pyplot()
