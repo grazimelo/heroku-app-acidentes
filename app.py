@@ -193,7 +193,7 @@ def main():
     mapa = folium.Map(location=[-15.788497,-47.879873],zoom_start=6,tiles='Stamen Terrain')
     mapa.add_child(plugins.HeatMap(coordenadas))   
     folium_static(mapa)
-    st.markdown('Mapa de calor representando os locais em que há uma maior concentração de acidentes(vermelho).')
+    st.markdown('Mapa de calor representando os locais em que há uma maior concentração de acidentes (vermelho).')
 
 
     st.title('Mapa interativo dos Acidentes de 2019 de janeiro até dezembro.')
