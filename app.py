@@ -184,7 +184,7 @@ def main():
     st.markdown('Os principais tipo de acidentes são: Colisão traseira, seguido por colisão transversal, saída de leito carroçável e colisão frontal.')
 
 
-    st.title('Mapa de calor representando as Br e os acidentes.')
+    st.title('Mapa de calor representando as rodovias federais e os acidentes.')
 
     coordenadas=[]
 
