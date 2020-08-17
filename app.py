@@ -127,7 +127,8 @@ def main():
         st.bar_chart(df_estado[df_estado['uf'] == 'CE'].T, width=200, height = 300)
 
     st.title('Br com maiores índices de acidentes.')
-    int(df['br'].value_counts().head(10).sort_values(ascending= True).plot.barh())
+    df['br'] = df['br'].astype("int")
+    df['br'].value_counts().head(10).sort_values(ascending= True).plot.barh()
     st.pyplot()
     st.markdown('A Br em que há mais acidentes é a Br 101,116,381, respectivamente.')
 
